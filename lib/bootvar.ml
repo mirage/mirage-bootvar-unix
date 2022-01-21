@@ -16,7 +16,7 @@
  *)
 
 let argv () =
-  let cmd_line = Array.fold_left (fun x arg -> x ^ " " ^ arg) "" Sys.argv in
+  let cmd_line = Array.fold_left (fun x arg -> x ^ " \"" ^ arg ^ "\"") "" Sys.argv in
   match Parse_argv.parse cmd_line with
   | Ok l -> Lwt.return (Array.of_list l)
   | Error s -> Lwt.fail_with s
