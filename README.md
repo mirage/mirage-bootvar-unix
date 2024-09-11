@@ -1,3 +1,5 @@
+Please note: this repository has been archived, the code and development continues in the [mirage-bootvar](https://github.com/mirage/mirage-bootvar) repository.
+
 # mirage-bootvar-unix -- Unix implementation of MirageOS Bootvar interface
 
 Library for passing boot parameters from Unix to MirageOS.
